@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/MasterEffects.css">
+    <title>Master Effects</title>
+    <style>
+        #test {
+            text-align: center;
+            padding-top: 5%;
+            position: absolute;
+            display: block;
+            margin: auto;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 100px;
+        }
+        
+        .les_boutons {
+            position: absolute;
+            left: 10%;
+        }
+        
+        button {
+            width: 200px;
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="les_boutons">
+        <button id="beat_poum_poum">beat_poum_poum</button>
+        <button id="aberration_chromatique_texte">aberration_chromatique_texte</button>
+        <button id="ArcEnCielFond">ArcEnCielFond</button>
+        <button id="beatBN">beatBN</button>
+        <button id="no_cursor">no_cursor</button>
+        <button id="scrollboite">scrollboite</button>
+        <button id="satanique">satanique</button>
+
+
+    </div>
+    <textarea id="test">Écrivez ici un petit quelque chose!</textarea>
+
+
+
+
+    <script>
+        let test = document.getElementById("test");
+
+        let beat_poum_poum = document.getElementById("beat_poum_poum");
+        let aberration_chromatique_texte = document.getElementById("aberration_chromatique_texte");
+        let ArcEnCielFond = document.getElementById("ArcEnCielFond");
+        let beatBN = document.getElementById("beatBN");
+        let no_cursor = document.getElementById("no_cursor");
+        let scrollboite = document.getElementById("scrollboite");
+        let satanique = document.getElementById("satanique");
+
+        beat_poum_poum.addEventListener("click", addclass1);
+        aberration_chromatique_texte.addEventListener("click", addclass2);
+        ArcEnCielFond.addEventListener("click", addclass3);
+        beatBN.addEventListener("click", addclass4);
+        no_cursor.addEventListener("click", addclass5);
+        scrollboite.addEventListener("click", addclass6);
+        satanique.addEventListener("click", addclass7);
+
+        function addclass1() {
+            test.className = '';
+            test.classList.toggle("beat_poum_poum");
+        }
+
+        function addclass2() {
+            test.className = '';
+            test.classList.toggle("aberration_chromatique_texte");
+        }
+
+        function addclass3() {
+            test.className = '';
+            test.classList.toggle("ArcEnCielFond");
+        }
+
+        function addclass4() {
+            test.className = '';
+            test.classList.toggle("beatBN");
+        }
+
+        function addclass5() {
+            test.className = '';
+            test.classList.toggle("no_cursor");
+        }
+
+        function addclass6() {
+            test.className = '';
+            test.classList.toggle("scrollboite");
+        }
+
+        function addclass7() {
+            test.className = '';
+            test.classList.toggle("satanique");
+        }
+    </script>
+</body>
+
+</html>
